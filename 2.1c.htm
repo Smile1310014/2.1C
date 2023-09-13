@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vue 3 Concepts</title>
+    <!-- Include Vue.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.20/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Vue 3 Concepts</h1>
+
+        <!-- Example of v-if and v-else -->
+        <p v-if="message">This message is shown using v-if.</p>
+        <p v-else>This message is shown using v-else.</p>
+
+        <!-- Example of v-show -->
+        <p v-show="message">This message is shown using v-show.</p>
+        
+        <h3>New launches of Iphone </h3>
+
+        <!-- Example of v-for -->
+        <ul>
+            <li v-for="Phone details">Iphone 15</li>
+        </ul>
+        <ul>
+            <li v-for="Phone details">Iphone 15 pro</li>
+        </ul>
+
+        <!-- Example of v-if with v-for -->
+        <ul>
+            <li v-for="Phone details" v-if="Phone !== 'Iphone 15 pro max'">Iphone 15 pro max</li>
+        </ul>
+
+        <h2>Form Input Handling with v-model</h2>
+
+        <!-- Example of v-model -->
+        <input type="text" v-model="message">
+        <p>May I know your feedback</p>
+
+        <!-- Example of v-model with checkboxes -->
+        <label>
+            <input type="checkbox" v-model="Checked">
+            Item 1
+        </label>
+        <labe2>
+            <input type="checkbox" v-model="Checked">
+            Item 2
+        </labe2>
+        <labe3>
+            <input type="checkbox" v-model="Checked">
+            Item 3
+        </labe3>
+        <p>Which one you like</p>
+    </div>
+
+
+</body>
+</html>
